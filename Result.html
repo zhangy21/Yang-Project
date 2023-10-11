@@ -7,19 +7,57 @@
     <meta nane="viewport" content="width=device-width,initial-scale=1.0">
   </head>
 <style>
+  .home {
+  height: 100vh;
+  position: relative;
+  }
+   
+  *,
+   ::before,
+   ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+   body {
+  font-family: Playfair Display, sans-serif;
+  background: #f1f1f1;
+  }
+
+  video {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  }
+
   .pity{
+    object-fit: cover;
     background-color: aquamarine;
     font-size: 80px;
     font-weight: 900;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
+
+  .jpg{
+    object-fit: cover;
+  }
+
 </style>
   <body>
   <center>
     <div class="pity">It is a pity that you did not grab the salt!</div>
 
-    <img src="Hoardingsalt.jpg" height="200px"/>
+    <div class="jpg"><img src="Hoardingsalt.jpg" height="800px"/></div>
   </center>
+  <div class="home">
+    <video autoplay muted loop>
+      <source src="China_ Shoppers panic buy salt after Japan releases water from Fukushima.mp4" type="video/mp4" />
+    </video>
+  </div>
     
   </body>
 
